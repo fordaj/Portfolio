@@ -1,0 +1,175 @@
+:root{
+    --color-dark:  #303030;
+    --color-mid: #606060;
+    --color-light: rgb(230, 230, 230);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;    
+    scroll-behavior: smooth;
+}
+
+
+/******* BODY (1.5s) *******/
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    animation: whiteToBackground ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+	overflow-y: hidden;
+    color: var(--color-dark);
+}
+
+/******* HEADER *******/
+.header {
+    text-align: center;
+}
+.header img {
+    width: 250px;
+    border-radius: 50%;
+    padding: 30px;
+}
+.header h1 {
+    line-height: 5rem;
+    margin: 0;
+    padding: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3rem;
+    font-weight: 250;
+}
+.header h2 {
+    line-height: 4rem;
+    padding: 0;
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.icons img {
+    width: 100px;
+    margin: 0px;
+}
+
+/******* GALLERY *******/
+
+.gallery {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 5px;
+    margin-top: 10px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-bottom: 100px;
+}
+
+.project {
+    text-align: center;
+    height: 26.666666666vw;
+    width: 26.666666666vw;
+    background-color: var(--color-light);
+}
+
+.project button{
+    border: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.frankendelta {
+    grid-row: 1 / span 2;
+    height: 53.33333333vw;
+}
+
+.frankendelta button{
+    background: url("frankendelta.png");
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: contain;
+}
+
+.lowpy button{
+    background: url("lowpy.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; 
+    width: 60%;
+}
+
+.fordworks3D button{
+    background: url("fordworks3D.svg");
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: contain;
+}
+
+.ledPianoTeacher {
+    grid-column: 2 / span 2;
+    width: 53.33333333vw;
+}
+
+.ledPianoTeacher button{
+    background: url("piano_teacher.png");
+    background-repeat: no-repeat;
+    background-position: bottom; 
+    background-size: contain;
+}
+
+.crossbar {
+    grid-column: 1 / span 2;
+    width: 53.333333333vw;
+}
+
+.crossbar button{
+    background: url("crossbar.png");
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: contain;
+}
+
+.elksLogo button{
+    background: url("elks_logo.png");
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: contain;
+}
+
+/******* DESCRIPTIONS *******/
+
+section {
+    width: 100%;
+    padding: 10px 10vw 10px 10vw;
+}
+
+
+section img {
+    width: 30%;
+    height: 30%;
+}
+
+section p {
+    margin: 0 0 0 10px;
+}
+
+.left{
+    text-align: left;
+}
+
+.right{
+    text-align: right;
+}
+
+.dark {
+    background-color: var(--color-mid);
+    color: var(--color-light);
+}
+
+
+.light {
+    background-color: var(--color-light);
+    color: var(--color-dark);
+}

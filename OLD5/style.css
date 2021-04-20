@@ -1,0 +1,57 @@
+:root{
+    --color-dark-gray:  #262626;
+    --color-light-gray: #d1d1d1;
+}
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+	overflow-y: hidden;
+    color: white;
+}
+  
+@keyframes fadeInAnimation {
+    0% {
+        background-color: white;
+        opacity: 0;
+    }
+    100% {
+        background-color: var(--color-dark-gray);
+        opacity: 1;
+     }
+}
+
+
+.project {
+    /* background-color: var(--color-background); */
+}
+
+.header{
+
+}
+
+.dark-gray{
+    background-color: var(--color-dark-gray);
+}
+.gray{
+    background-color: grey;
+}
+.light-gray{
+    background-color: var(--color-light-gray);
+}
+
+p,h1{
+    margin:0;
+}
+.slant-right{
+    width: 100vw;
+    clip-path: polygon(0% 100%, 100% 10%, 100% 100%, 0% 100%);
+    
+}
+.slant-left{
+    width: 100vw;
+    clip-path: polygon(0% 0%, 100% 100%, 100% 100%, 0% 100%);
+}
